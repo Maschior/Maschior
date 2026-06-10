@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1262px" height="750px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.key {fill: #953800;}
+.value {fill: #0a3069;}
+.addColor {fill: #1a7f37;}
+.delColor {fill: #cf222e;}
+.cc {fill: #c2cfde;}
+text, tspan {white-space: pre;}
+</style>
+<rect x="0.5" y="0.5" width="1261px" height="749px" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1" rx="15"/>
+<text x="15" y="35" fill="#24292f" class="ascii" font-size="12px">
+<tspan x="15" y="35.0">ddddddddddddddddddddddddddddddddddddddddr/----/Zdddddddddddddddddddddddddddddddddddd</tspan>
+<tspan x="15" y="51.0">dddddddddddddddddddddddddddddddddddddc1--------11-1rddZrrcJddddddddddddddddddddddddd</tspan>
+<tspan x="15" y="67.0">ddddddddddddddddddddddddddddddddZZJc1-&lt;-&lt;1---11111----1---1-1cdddddddddddddddddddddd</tspan>
+<tspan x="15" y="83.0">ddddddddddddddddddddddddddddddJJJc/1----&lt;&lt;&lt;&lt;-&lt;--&lt;---1-------1-/rZddddddddddddddddddd</tspan>
+<tspan x="15" y="99.0">dddddddddddddddddddddddddddZcr/111-1---&lt;&lt;----------------------1rZZddddddddddddddddd</tspan>
+<tspan x="15" y="115.0">dddddddddddddddddddddddddZZ/111-11----&lt;-1/ccJccrr//1-------------1cddddddddddddddddd</tspan>
+<tspan x="15" y="131.0">ddddddddddddddddddddddddd/11-11111/1-1rJZZZdddddZddZZZJc/-&lt;&lt;&lt;&lt;&lt;&lt;---1Zddddddddddddddd</tspan>
+<tspan x="15" y="147.0">dddddddddddddddddddddddr----1/1111/1/cJZdddddddddddddddZZJc1&lt;&lt;&lt;&lt;&lt;&lt;--1cdddddddddddddd</tspan>
+<tspan x="15" y="163.0">dddddddddddddddddddddJ----1111/11///cJZZddddddddddddddddZZJJr-&lt;&lt;&lt;&lt;&lt;--1rddddddddddddd</tspan>
+<tspan x="15" y="179.0">dddddddddddddddddddd/---111111111/1rJZZddddddddddddddddZZZZJJc/-&lt;&lt;&lt;---1rdddddddddddd</tspan>
+<tspan x="15" y="195.0">ddddddddddddddddddd1--111111111111rJZZddddddddddddddddddZZZZJJJr-&lt;-&lt;--1/cddddddddddd</tspan>
+<tspan x="15" y="211.0">dddddddddddddddddZ---11111111--11/JZZddddddddddddddddddZZZZZZJJc/&lt;---1-1/Zdddddddddd</tspan>
+<tspan x="15" y="227.0">ddddddddddddddddJ----11-1111----/JZddddddddddddddddddddddZZZZJJcr-&lt;---11/cdddddddddd</tspan>
+<tspan x="15" y="243.0">dddddddddddddddJ-----1-111-----1/rccrrr/rrJJZZddddddZZZZdZZZZZJJr1&lt;----11cZddddddddd</tspan>
+<tspan x="15" y="259.0">ddddddddddddddc-----1--1--------1111-----11//cZZZZZZcrr//1//rrrcr1&lt;-1--1/rZddddddddd</tspan>
+<tspan x="15" y="275.0">dddddddddddddr-------1-----&lt;--/rcJJJJcr///rrrJZZdZJr/111-------111&lt;-1---1rZddddddddd</tspan>
+<tspan x="15" y="291.0">ddddddddddddr-------1----&lt;-1-////cr111////rrcJZddZJr/1111/rcccr/11&lt;--&lt;--//Jddddddddd</tspan>
+<tspan x="15" y="307.0">dddddddddddcr-----------&lt;--1//11-/r---rr//JJJJZddZJr//--1--1r////1&lt;-----11Jddddddddd</tspan>
+<tspan x="15" y="323.0">dddddddddddJ1---------&lt;--1/rrccJccrrrcrcJJZZZZZdddZJccrr1-/r1-1///-&lt;&lt;---1/Zddddddddd</tspan>
+<tspan x="15" y="339.0">dddddddddddc11-------&lt;&lt;-1/cJZZZZZZZZZZZZZZZJJZZdddZJccJJrr/rrrrrr/-&lt;&lt;---1/Jddddddddd</tspan>
+<tspan x="15" y="355.0">dddddddddddc11------&lt;&lt;-1rJZZdddddddddZdZZZZZZZZZddZZJJJJZZZJJJJJcr-&lt;-&lt;&lt;-1Zdddddddddd</tspan>
+<tspan x="15" y="371.0">dddddddddddZ/-------&lt;&lt;1rJZZZZdddddZdZdddZZJJZZZddddZJcJZZZZZZZZZJc1&lt;&lt;-&lt;--ddddddddddd</tspan>
+<tspan x="15" y="387.0">dddddddddddc--&lt;----&lt;--1cZZZddZdddddddddZZJZZZJZZZZZZJJJZZZZZZZZZJJ1&lt;&lt;&lt;-&lt;1ddddddddddd</tspan>
+<tspan x="15" y="403.0">ddddddddddZ/-&lt;-&lt;---&lt;&lt;-/cJZZZdddddddddZZZZJc/--rcrrrrrrcZZZZZZZZJJJ1&lt;&lt;-&lt;--ddddddddddd</tspan>
+<tspan x="15" y="419.0">ddddddddddc/1-&lt;-----&lt;-/cJZZZZZZddddddddZZZcrrrr//11/1rJZZZZZZZZZJc-&lt;&lt;--1-1dddddddddd</tspan>
+<tspan x="15" y="435.0">ddddddddddcJ/1--&lt;&lt;&lt;-&lt;-/JJZZZZZZdZdZZdddZZZJr///1//111cJJZZZZZJJJJr&lt;&lt;----1-rZZddddddd</tspan>
+<tspan x="15" y="451.0">ddddddd/Zrr1---&lt;-&lt;&lt;&lt;&lt;&lt;/JJZZZZZZZZZZZJcccrccccJccrrr////rJZJZJJJJc----&lt;-1-1rZdddddddd</tspan>
+<tspan x="15" y="467.0">dddddddddJr1----1-&lt;&lt;&lt;&lt;/JJZZZZZZZZZJcr//rc///rrrrrr///rrcrccJJJccr&lt;//--c//cr/JJZZdddd</tspan>
+<tspan x="15" y="483.0">dddddddddddddddZr-&lt;&lt;&lt;&lt;rJJZZZZZZZZJcccJJJJJZZZJJJJJcr1-1//rcJJcc1-1--JJdddJrcJJdddddd</tspan>
+<tspan x="15" y="499.0">ddddddddddddZddZr&lt;&lt;&lt;&lt;&lt;&lt;-rJJJJJJZJJZZZZZZZZJJcccccJJJJJJJJJJJJcc/&lt;&lt;-/Zddddddddddddddd</tspan>
+<tspan x="15" y="515.0">ddddddddddddccr/-&lt;&lt;&lt;&lt;&lt;&lt;-rrcJJJJJJJJZZZZZZZJJccrrrrrcccJJJJccccr&lt;-/1JZddddddddddddddd</tspan>
+<tspan x="15" y="531.0">ddddddddddddZc--&lt;&lt;&lt;--&lt;&lt;-ccrrcJJJJJJZZZZZZZZZdZZZZZJJJJJccccrr/&lt;&lt;&lt;----1-cZJdddddddddd</tspan>
+<tspan x="15" y="547.0">dddddddddddddcr&lt;--1---&lt;&lt;cJcr/rrccJJJZZZZZdZZZZZZZZZZZJJJcrr/-&lt;&lt;&lt;&lt;&lt;&lt;--rccrddddddddddd</tspan>
+<tspan x="15" y="563.0">dddddddddddddJ/-&lt;/r--&lt;&lt;-cJJJcr///rr/rrcJccJJJJJJJJJJcccr/11&lt;&lt;-&lt;&lt;&lt;&lt;--rcZdZddddddddddd</tspan>
+<tspan x="15" y="579.0">dddddddddddddZJ-&lt;-&lt;&lt;&lt;-&lt;-rJJJJccr/-1-11/rrrcccrrJcrrr//11-/-&lt;&lt;&lt;-----//Zdddddddddddddd</tspan>
+<tspan x="15" y="595.0">dddddddddddddddZc-------/cJJJJJcrr/-----1111/1/1/111---1r/&lt;&lt;&lt;&lt;&lt;&lt;&lt;--/Jddddddddddddddd</tspan>
+<tspan x="15" y="611.0">ddddddddddddZJ1----------1cJJJJJccrr/1--------&lt;-&lt;-&lt;--1/rr/&lt;&lt;&lt;&lt;&lt;---/Jdddddddddddddddd</tspan>
+<tspan x="15" y="627.0">dddddddddZ-&lt;&lt;--------------cJJJJJccrrr///111-111111//rrrr1&lt;&lt;&lt;&lt;&lt;&lt;-----&lt;-1cddddddddddd</tspan>
+<tspan x="15" y="643.0">dddddZJr--&lt;-----------------rcJJJJcccrrr///////////rrcrr/-&lt;&lt;&lt;&lt;&lt;-----1--&lt;-----1rJZddd</tspan>
+<tspan x="15" y="659.0">Zc1111---&lt;-&lt;-----------------/ccJJJcccrrrr//////rrccrrr//-&lt;&lt;&lt;&lt;&lt;--&lt;&lt;&lt;&lt;---&lt;&lt;&lt;--------1</tspan>
+<tspan x="15" y="675.0">--1------&lt;--------------------1rccJccccrrrrrrrrrrrccrr//1--&lt;&lt;----&lt;&lt;&lt;&lt;&lt;&lt;----&lt;--------</tspan>
+<tspan x="15" y="691.0">----------&lt;------------------&lt;--rcccccccrrrrrrrccccrr////1-&lt;-&lt;--&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;---&lt;--------</tspan>
+<tspan x="15" y="707.0">------------------------&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-rcccccccccccccccccrrrrr/-&lt;---&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-----------</tspan>
+<tspan x="15" y="723.0">------&lt;----&lt;---------&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;-&lt;-cJJJJJJJJJJJJJJcccJcc-&lt;&lt;--&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;----------</tspan>
+</text>
+<text x="630" y="35" fill="#24292f" font-size="15px">
+<tspan x="630" y="35">matheus@maschior</tspan> -————————————————————————————————————————————————-—-—
+<tspan x="630" y="54" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">Windows 11, Archlinux (Omarchy), Android</tspan>
+<tspan x="630" y="73" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ................................. </tspan><tspan class="value" id="age_data">23 years, 8 months, 6 days</tspan>
+<tspan x="630" y="92" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ................................................ </tspan><tspan class="value">Softtek, LTDA</tspan>
+<tspan x="630" y="111" class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">Automation &amp; Infrastructure Specialist</tspan>
+<tspan x="630" y="130" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ........................................ </tspan><tspan class="value">IntelliJ Idea, VS Code</tspan>
+<tspan x="630" y="149" class="cc">. </tspan>                                                                    
+<tspan x="630" y="168" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">Java, Python, JavaScript/TypeScript,</tspan>
+<tspan x="630" y="187" class="cc">. </tspan><tspan class="key">                     </tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">PHP, Shell Script, SQL, PL/SQL</tspan>
+<tspan x="630" y="206" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">HTML, CSS, JSON, Markdown, LaTeX, YAML</tspan>
+<tspan x="630" y="225" class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">Portuguese, English</tspan>
+<tspan x="630" y="244" class="cc">. </tspan>                                                                    
+<tspan x="630" y="263" class="cc">. </tspan><tspan class="key">Tools.Infra</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">Nginx, Apache HTTP Server, Squid Proxy,</tspan>
+<tspan x="630" y="282" class="cc">. </tspan><tspan class="key">           </tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">Proxmox, Oracle VirtualBox</tspan>
+<tspan x="630" y="301" class="cc">. </tspan><tspan class="key">Tools.Infra.Cloud</tspan>:<tspan class="cc"> ............................................. </tspan><tspan class="value">AWS</tspan>
+<tspan x="630" y="320" class="cc">. </tspan><tspan class="key">Tools.DevOps</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Docker, Kubernetes, Jenkins, GitHub Actions,</tspan>
+<tspan x="630" y="339" class="cc">. </tspan><tspan class="key">            </tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">Ansible, Terraform (IaC), Git (GitHub/GitLab),</tspan>
+<tspan x="630" y="358" class="cc">. </tspan><tspan class="key">            </tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">Prometheus, Grafana</tspan>
+<tspan x="630" y="377" class="cc">. </tspan><tspan class="key">Tools.Management</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">Service Now, Microsoft 365 Dynamics, Trello</tspan>
+<tspan x="630" y="396" class="cc">. </tspan><tspan class="key">Tools.Security</tspan>:<tspan class="cc"> ............................... </tspan><tspan class="value">Wireshark, Kaspersky</tspan>
+<tspan x="630" y="415" class="cc">. </tspan>                                                                    
+<tspan x="630" y="434" class="cc">. </tspan><tspan class="key">Hobbies.Software</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">Testing Linux distros, playing Dota 2,</tspan>
+<tspan x="630" y="453" class="cc">. </tspan><tspan class="key">                </tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">learning something new in tech</tspan>
+<tspan x="630" y="472" class="cc">. </tspan><tspan class="key">Hobbies.Hardware</tspan>:<tspan class="cc"> .. </tspan><tspan class="value">Building my setup (infinite work), cleaning it,</tspan>
+<tspan x="630" y="491" class="cc">. </tspan><tspan class="key">                </tspan>:<tspan class="cc"> ................................. </tspan><tspan class="value">loving it (haha)</tspan>
+<tspan x="630" y="510" class="cc">. </tspan>                                                                    
+<tspan x="630" y="529" class="cc">. </tspan><tspan class="key">Objectives.Professional</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">To found my own company</tspan>
+<tspan x="630" y="548" class="cc">. </tspan><tspan class="key">Objectives.Life</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">To be the best father in the world</tspan>
+<tspan x="630" y="567" class="cc">. </tspan>                                                                    
+<tspan x="630" y="586" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">matheus.rubens.ti@gmail.com</tspan>
+<tspan x="630" y="605" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ................................... </tspan><tspan class="value">dev@maschior.com</tspan>
+<tspan x="630" y="624" class="cc">. </tspan><tspan class="key">Email.Work</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">matheus.borges@softtek.com</tspan>
+<tspan x="630" y="643" class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="cc"> ............................... </tspan><tspan class="value">linkedin.com/in/matheusrdb</tspan>
+<tspan x="630" y="662" class="cc">. </tspan>                                                                    
+<tspan x="630" y="681">- GitHub Stats</tspan> -——————————————————————————————————————————————————-—-—
+<tspan x="630" y="700" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> ............ </tspan><tspan class="value" id="repo_data">32</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value" id="contrib_data">41</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc" id="star_data_dots"> ............... </tspan><tspan class="value" id="star_data">1</tspan>
+<tspan x="630" y="719" class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> .................. </tspan><tspan class="value" id="commit_data">211</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc" id="follower_data_dots"> ..................... </tspan><tspan class="value" id="follower_data">5</tspan>
+<tspan x="630" y="738" class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc" id="loc_data_dots"> .......... </tspan><tspan class="value" id="loc_data">682,740</tspan> ( <tspan class="addColor" id="loc_add">840,636</tspan><tspan class="addColor">++</tspan>, <tspan id="loc_del_dots"></tspan><tspan class="delColor" id="loc_del">157,896</tspan><tspan class="delColor">--</tspan> )
+</text>
+</svg>

@@ -114,7 +114,7 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
     query_count('recursive_loc')
     url = f'https://api.github.com/repos/{owner}/{repo_name}/stats/contributors'
     
-    for attempt in range(3):
+    for attempt in range(10):
         request = requests.get(url, headers=HEADERS)
         if request.status_code == 200:
             break
@@ -142,8 +142,12 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
     if request.status_code == 204:
         return 0, 0, 0
         
-    # Handle SSO, permission or HTTP errors gracefully
-    if request.status_code in [401, 403, 404]:
+    # Handle SSO, permission, pending calculations or HTTP errors gracefully
+    if request.status_code in [202, 401, 403, 404]:
+        if request.status_code == 202:
+            print(f"Warning: Skipped repository {owner}/{repo_name} because contributor stats calculation is still pending (status code 202).")
+            return 0, 0, 0
+            
         is_rate_limit = False
         try:
             res_json = request.json()

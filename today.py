@@ -108,53 +108,41 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
     """
-    Uses GitHub's GraphQL v4 API and cursor pagination to fetch 100 commits from a repository at a time
+    Uses GitHub's REST API to fetch contributor stats for the repository.
+    Calculates additions, deletions, and commits authored by USER_NAME.
     """
     query_count('recursive_loc')
-    query = '''
-    query ($repo_name: String!, $owner: String!, $cursor: String) {
-        repository(name: $repo_name, owner: $owner) {
-            defaultBranchRef {
-                target {
-                    ... on Commit {
-                        history(first: 100, after: $cursor) {
-                            totalCount
-                            edges {
-                                node {
-                                    ... on Commit {
-                                        committedDate
-                                    }
-                                    author {
-                                        user {
-                                            id
-                                        }
-                                    }
-                                    deletions
-                                    additions
-                                }
-                            }
-                            pageInfo {
-                                endCursor
-                                hasNextPage
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }'''
-    variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
-    if request.status_code == 200:
-        res_json = request.json()
-        if 'errors' in res_json or 'data' not in res_json or res_json['data'] is None or 'repository' not in res_json['data'] or res_json['data']['repository'] is None:
-            print(f"Warning: Skipped repository {owner}/{repo_name} due to GraphQL errors or missing repository data.")
-            return 0, 0, 0
-        if res_json['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
-            return loc_counter_one_repo(owner, repo_name, data, cache_comment, res_json['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
-        else: return 0
+    url = f'https://api.github.com/repos/{owner}/{repo_name}/stats/contributors'
     
-    # Handle SSO, permission or HTTP errors gracefully without crashing the whole script
+    for attempt in range(3):
+        request = requests.get(url, headers=HEADERS)
+        if request.status_code == 200:
+            break
+        elif request.status_code == 202:
+            time.sleep(1) # wait for GitHub to compute stats
+        else:
+            break
+            
+    if request.status_code == 200:
+        contributors = request.json()
+        if not contributors or not isinstance(contributors, list):
+            return 0, 0, 0
+        for contributor in contributors:
+            if contributor.get("author", {}).get("login", "").lower() == USER_NAME.lower():
+                repo_additions = 0
+                repo_deletions = 0
+                repo_commits = contributor.get("total", 0)
+                for week in contributor.get("weeks", []):
+                    repo_additions += week.get("a", 0)
+                    repo_deletions += week.get("d", 0)
+                print(f"   {repo_name}: +{repo_additions} | -{repo_deletions} | {repo_commits} commits")
+                return repo_additions, repo_deletions, repo_commits
+        return 0, 0, 0
+        
+    if request.status_code == 204:
+        return 0, 0, 0
+        
+    # Handle SSO, permission or HTTP errors gracefully
     if request.status_code in [401, 403, 404]:
         is_rate_limit = False
         try:
@@ -168,26 +156,10 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
             print(f"Warning: Skipped repository {owner}/{repo_name} due to status code {request.status_code} (permission, SAML SSO, or private repo issue).")
             return 0, 0, 0
 
-    force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
+    force_close_file(data, cache_comment)
     if request.status_code == 403:
         raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
     raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
-
-
-def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
-    """
-    Recursively call recursive_loc (since GraphQL can only search 100 commits at a time) 
-    only adds the LOC value of commits authored by me
-    """
-    for node in history['edges']:
-        if node['node']['author']['user'] == OWNER_ID:
-            my_commits += 1
-            addition_total += node['node']['additions']
-            deletion_total += node['node']['deletions']
-
-    if history['edges'] == [] or not history['pageInfo']['hasNextPage']:
-        return addition_total, deletion_total, my_commits
-    else: return recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
 
 
 def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=[]):
